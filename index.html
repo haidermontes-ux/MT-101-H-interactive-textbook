@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MT-101 Interactive Digital Textbook</title>
+
+  <!-- LaTeX-style font -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/computer-modern-serif@5.0.8/index.min.css">
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- MathJax: allows LaTeX code inside the HTML -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['\\(', '\\)'], ['$', '$']],
+        displayMath: [['\\[', '\\]'], ['$$', '$$']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="sidebar-title" data-es="Libro Digital Interactivo MT-101">MT-101 Interactive Digital Textbook</div>
+    <div class="sidebar-subtitle" data-es="Marcadores / Navegación">Bookmarks / Navigation</div>
+
+    <div class="language-switcher">
+      <button id="language-toggle" data-es="English">Español</button>
+    </div>
+
+    <nav>
+      <a href="#cover" data-es="Portada">Title Page</a>
+       <a href="#preface" data-es="Prefacio">Preface</a>
+      <a href="#introduction" data-es="Introducción">Introduction</a>
+      <a href="#book-structure" data-es="Estructura del Libro">Organization of the Textbook</a>
+      <a href="#contents" data-es="Tabla de Contenido">Table of Contents</a>
+      <a href="#chapter-1" data-es="1. Introducción al Sistema de los Números Reales">1. Introduction to the Real Number System</a>
+      <!-- <a href="#chapter-2" data-es="2. Orden en los Números Reales, Operaciones y Propiedades">2. Order in the Real Numbers, Operations, and Properties</a> -->
+      <!-- <a href="#chapter-3" data-es="3. Potencias y expresiones algebraicas">3. Powers and Algebraic Expressions</a> -->
+      <!-- <a href="#chapter-4" data-es="4. Más Sobre Expresiones Algebraicas y Problemas Aplicados">4. More on Algebraic Expressions and Applied Problems</a> -->
+      <!-- <a href="#chapter-5" data-es="5. Introducción a Polinomios">5. Introduction to Polynomials</a> -->
+      <!-- <a href="#chapter-6" data-es="6. Operaciones con Polinomios">6. Operations with Polynomials</a> -->
+      <!-- <a href="#chapter-7" data-es="7. Introducción a las ecuaciones lineales">7. Introduction to Linear Equations</a> -->
+      <!-- <a href="#chapter-8" data-es="8. Resolver otras ecuaciones">8. Solving Other Equations</a> -->
+      <!-- <a href="#chapter-9" data-es="Glosario Matemático">Mathematical Glossary</a> -->
+    </nav>
+  </aside>
+
+  <main class="book-container">
+
+    <!-- Title Page -->
+    <section class="page cover-page" id="cover">
+      <div class="cover-content">
+        <div class="institution"></div>
+
+        <h1 data-es="Libro Digital Interactivo<br>MT-101">MT-101 Interactive Digital Textbook</h1>
+
+        <div class="subtitle" data-es="Fundamentos Matemáticos I">Mathematic Foundations I</div>
+
+        <div class="author-block" data-es="Creado por<br><div class='author-name'>Haider Montes Masmela</div>">
+          Created by
+          <div class="author-name">Haider Montes Masmela</div>
+        </div>
+      </div>
+
+      <div class="footer-note" data-es="Este material está destinado exclusivamente para uso educativo en MT-101. No se permite copiar, redistribuir, imprimir ni reproducir este libro sin autorización del autor.">
+        This material is intended exclusively for educational use in MT-101. Copying, redistribution, printing, or unauthorized reproduction of this textbook is not permitted without authorization from the author.
+      </div>
+    </section>
+
+
+
+        <!-- Preface -->
+<section class="page chapter-page preface-page" id="preface">
+
+  <h2 data-es="Prefacio">
+    Preface
+  </h2>
+
+  <p data-es="Bienvenid@ a MT-101: Fundamentos Matemáticos I. Este libro digital interactivo fue diseñado como una herramienta de apoyo para estudiantes del área de ciencias de la salud, especialmente aquellos pertenecientes al programa de Imágenes Radiológicas y Diagnósticas.">
+    Welcome to MT-101: Mathematics Foundations I. This interactive digital textbook was designed as a support tool for students in the health sciences, especially those enrolled in Radiological and Diagnostic Imaging programs.
+  </p>
+
+  <p data-es="El propósito principal de este material es ayudar al estudiante a desarrollar una base sólida en conceptos matemáticos fundamentales, promoviendo el razonamiento lógico, la resolución de problemas y la aplicación de las matemáticas en contextos reales relacionados con el campo de la salud.">
+    The main purpose of this material is to help students develop a strong foundation in fundamental mathematical concepts, promoting logical reasoning, problem-solving, and the application of mathematics in real-world health science contexts.
+  </p>
+
+  <p data-es="A lo largo de este libro, los temas son presentados de manera progresiva mediante explicaciones conceptuales, ejemplos resueltos, ejercicios de práctica y actividades de preparación para evaluaciones. Además, se incluyen aplicaciones contextualizadas en radiología, ultrasonido e imágenes médicas para reforzar la conexión entre las matemáticas y la futura práctica profesional del estudiante.">
+    Throughout this book, topics are presented progressively through conceptual explanations, worked examples, practice exercises, and assessment preparation activities. In addition, contextualized applications in radiology, ultrasound, and medical imaging are included to strengthen the connection between mathematics and the student’s future professional practice.
+  </p>
+
+  <p data-es="Este libro también fue diseñado pensando en un ambiente de aprendizaje híbrido y bilingüe. Por esta razón, el contenido se presenta tanto en inglés como en español, facilitando el acceso a terminología matemática y científica utilizada frecuentemente en cursos universitarios y entornos clínicos.">
+    This book was also designed with a hybrid and bilingual learning environment in mind. For this reason, the content is presented in both English and Spanish, facilitating access to mathematical and scientific terminology frequently used in university courses and clinical settings.
+  </p>
+
+  <div class="icon-box concept-box">
+
+    <div class="icon-box-title" data-es="🧠 Filosofía del Libro">
+      🧠 Book Philosophy
+    </div>
+
+    <p data-es="Las matemáticas no deben verse únicamente como un conjunto de reglas y procedimientos, sino como una herramienta para comprender, analizar y resolver situaciones reales dentro del campo de las ciencias de la salud.">
+      Mathematics should not be viewed only as a set of rules and procedures, but as a tool to understand, analyze, and solve real situations within the health sciences field.
+    </p>
+
+  </div>
+
+  <p data-es="Se recomienda al estudiante utilizar este libro de forma activa: leer cuidadosamente cada sección, practicar regularmente, intentar resolver problemas antes de consultar ejemplos y utilizar las actividades de preparación para reforzar su aprendizaje antes de las evaluaciones.">
+    Students are encouraged to use this book actively: read each section carefully, practice regularly, attempt problems before reviewing examples, and use the assessment preparation activities to reinforce learning before evaluations.
+  </p>
+
+  <p data-es="Esperamos que este recurso contribuya significativamente a su desarrollo académico y profesional.">
+    We hope this resource contributes significantly to your academic and professional development.
+  </p>
+
+  <div class="preface-signature">
+
+    <p>
+      <strong>Haider Montes Masmela</strong><br>
+      <span data-es="Instructor de Matemáticas">Mathematics Instructor</span><br>
+      <span data-es="Universidad Central del Caribe">
+        Universidad Central del Caribe
+      </span>
+    </p>
+
+  </div>
+
+  <div class="page-number"></div>
+
+</section>
+
+
+
+    <!-- Introduction Page -->
+<section class="page chapter-page introduction-page" id="introduction">
+
+    <h2 data-es="Introducción">
+    Introduction
+  </h2>
+
+  <p data-es="Las matemáticas forman parte esencial de múltiples disciplinas dentro de las ciencias de la salud. Desde el análisis de imágenes médicas hasta el cálculo de dosis, intensidades, distancias y medidas anatómicas, los profesionales del área utilizan conceptos matemáticos constantemente para interpretar información y tomar decisiones precisas.">
+    Mathematics is an essential part of many disciplines within the health sciences. From medical image analysis to the calculation of doses, intensities, distances, and anatomical measurements, professionals in the field constantly use mathematical concepts to interpret information and make accurate decisions.
+  </p>
+
+  <p data-es="El curso MT-101: Fundamentos Matemáticos I. introduce al estudiante a los conceptos algebraicos y numéricos fundamentales que servirán como base para cursos futuros y aplicaciones profesionales. A lo largo de este libro se desarrollarán habilidades relacionadas con números reales, desigualdades, potencias, expresiones algebraicas, polinomios y ecuaciones lineales.">
+    The course MT-101: Mathematics Foundations I. introduces students to the fundamental algebraic and numerical concepts that will serve as a foundation for future courses and professional applications. Throughout this book, students will develop skills related to real numbers, inequalities, exponents, algebraic expressions, polynomials, and linear equations.
+  </p>
+
+  <div class="icon-box health-box">
+    
+
+    <div class="icon-box-title" data-es="🩺 Aplicación en Ciencias de la Salud">
+      🩺 Health Sciences Application
+    </div>
+
+    <p data-es="En radiología e imágenes médicas, las matemáticas se utilizan para calcular tiempos de exposición, intensidades de radiación, resolución de imágenes y medidas anatómicas obtenidas mediante equipos diagnósticos.">
+      In radiology and medical imaging, mathematics is used to calculate exposure times, radiation intensities, image resolution, and anatomical measurements obtained through diagnostic equipment.
+    </p>
+
+  </div>
+
+  <p data-es="Cada capítulo ha sido organizado para presentar primero los conceptos fundamentales, seguido de ejemplos trabajados paso a paso, ejercicios de práctica y secciones de preparación para evaluaciones. Este enfoque busca fortalecer tanto la comprensión conceptual como la habilidad procedimental del estudiante.">
+    Each chapter has been organized to first present fundamental concepts, followed by step-by-step worked examples, practice exercises, and assessment preparation sections. This approach aims to strengthen both conceptual understanding and procedural skills.
+  </p>
+
+  <p data-es="El contenido también incorpora terminología matemática en inglés y español para apoyar el desarrollo académico de estudiantes en ambientes bilingües y facilitar la comprensión de vocabulario utilizado frecuentemente en contextos universitarios y clínicos.">
+    The content also incorporates mathematical terminology in both English and Spanish to support students in bilingual learning environments and facilitate understanding of vocabulary frequently used in university and clinical contexts.
+  </p>
+
+  <div class="icon-box tip-box">
+
+    <div class="icon-box-title" data-es="💡 Recomendación de Estudio">
+      💡 Study Recommendation
+    </div>
+
+    <p data-es="La práctica constante es una de las herramientas más importantes para el aprendizaje de las matemáticas. Se recomienda resolver los ejercicios de práctica antes de pasar a la siguiente sección del libro.">
+      Consistent practice is one of the most important tools for learning mathematics. Students are encouraged to complete the practice exercises before moving to the next section of the book.
+    </p>
+
+  </div>
+
+  <p data-es="Más allá de memorizar procedimientos, este curso busca desarrollar razonamiento matemático, capacidad de análisis y confianza para resolver problemas académicos y profesionales.">
+    Beyond memorizing procedures, this course seeks to develop mathematical reasoning, analytical skills, and confidence in solving academic and professional problems.
+  </p>
+
+  <div class="page-number"></div>
+
+</section>
+
+    <!-- Book Structure Page -->
+    <section class="page structure-page" id="book-structure">
+      <h2 data-es="Estructura del Libro">Structure of the Book</h2>
+
+      <p data-es="Cada capítulo sigue una estructura académica consistente para que los estudiantes puedan avanzar desde los conceptos básicos hasta las aplicaciones y la preparación para evaluaciones.">
+        Each chapter follows a consistent academic structure so that students can move from basic concepts to applications and assessment preparation.
+      </p>
+
+      <div class="feature-grid">
+        <div class="feature-card">
+          <strong data-es="1. Objetivos de Aprendizaje">1. Learning Objectives</strong>
+          <p data-es="Declaraciones breves que describen lo que los estudiantes deben poder hacer al completar el capítulo.">Brief statements describing what students should be able to do after completing the chapter.</p>
+        </div>
+
+        <div class="feature-card">
+          <strong data-es="2. Teoría y Definiciones">2. Theory and Definitions</strong>
+          <p data-es="Explicaciones claras de los conceptos matemáticos presentados en clase.">Clear explanations of the mathematical concepts introduced in class.</p>
+        </div>
+
+        <div class="feature-card">
+          <strong data-es="3. Ejemplos Resueltos">3. Worked Examples</strong>
+          <p data-es="Ejemplos paso a paso que muestran cómo resolver problemas utilizando razonamiento matemático.">Step-by-step examples showing how to solve problems using mathematical reasoning.</p>
+        </div>
+
+        <div class="feature-card">
+          <strong data-es="4. Ejercicios de Práctica">4. Practice Exercises</strong>
+          <p data-es="Ejercicios para que los estudiantes completen de forma independiente después de revisar los ejemplos.">Exercises for students to complete independently after reviewing the examples.</p>
+        </div>
+
+        <div class="feature-card">
+          <strong data-es="5. Recursos Interactivos">5. Interactive Resources</strong>
+          <p data-es="Gráficas, calculadoras, visualizaciones y otras herramientas que pueden integrarse en la versión HTML.">Graphs, calculators, visualizations, and other tools that may be embedded in the HTML version.</p>
+        </div>
+
+        <div class="feature-card">
+          <strong data-es="6. Preparación para Evaluaciones">6. Assessment Preparation</strong>
+          <p data-es="Práctica alineada con pruebas cortas, exámenes parciales y examen final.">Practice aligned with quizzes, partial exams, and the final exam.</p>
+        </div>
+        
+        <div class="feature-card">
+          <strong data-es="7. Aplicaciones prácticas">7. Practical Applications</strong>
+          <p data-es="Cada capítulo tendré aplicaciones prácticas en diferentes contextos contextos y areas, incluido las ciencias radiológicas.">Each chapter will have practical applications in different contexts and fields, including radiological sciences.</p>
+        </div>
+
+        <div class="feature-card">
+          <strong data-es="8. Recursos de Aprendizaje">8. Learning Resources</strong>
+          <p data-es="Vídeos, mapas mentales e infografias generadas con NotebookLM basadas en los conceptos explicados en el capítulo.">Videos, mental maps, and infographics generated with NotebookLM based on the concepts explained in the chapter.</p>
+        </div>
+      </div>
+
+      <div class="page-number"></div>
+    </section>
+
+    <!-- Table of Contents Page -->
+    <section class="page contents-page" id="contents">
+      <h2 data-es="Tabla de Contenido">Table of Contents</h2>
+
+      <p data-es="Seleccione cualquier título de capítulo a continuación para ir directamente a esa sección del libro.">
+        Select any chapter title below to move directly to that section of the textbook.
+      </p>
+
+      <ul class="contents-list">
+        <li><a href="#chapter-1"><span class="contents-title" data-es="1. Introducción al Sistema de los Números Reales">1. Introduction to the Real Number System</span><span class="contents-page-number" data-target="chapter-1"></span></a></li>
+        <!-- <li><a href="#chapter-2"><span class="contents-title" data-es="2. Orden en los Números Reales, Operaciones y Propiedades">2. Order in the Real Numbers, Operations, and Properties</span><span class="contents-page-number" data-target="chapter-2"></span></a></li> -->
+        <!-- <li><a href="#chapter-3"><span class="contents-title" data-es="3. Potencias y expresiones algebraicas">3. Powers and Algebraic Expressions</span><span class="contents-page-number" data-target="chapter-3"></span></a></li> -->
+        <!-- <li><a href="#chapter-4"><span class="contents-title" data-es="4. Más Sobre Expresiones Algebraicas y Problemas Aplicados">4. Algebraic Expressions and Applied Problems</span><span class="contents-page-number" data-target="chapter-4"></span></a></li> -->
+        <!-- <li><a href="#chapter-5"><span class="contents-title" data-es="5. Introducción a Polinomios">5. Introduction to Polynomials</span><span class="contents-page-number" data-target="chapter-5"></span></a></li> -->
+        <!-- <li><a href="#chapter-6"><span class="contents-title" data-es="6. Operaciones con Polinomios">6. Operations with Polynomials</span><span class="contents-page-number" data-target="chapter-6"></span></a></li> -->
+        <!-- <li><a href="#chapter-7"><span class="contents-title" data-es="7. Introducción a las ecuaciones lineales">7. Introduction to Linear Equations</span><span class="contents-page-number" data-target="chapter-7"></span></a></li> -->
+        <!-- <li><a href="#chapter-8"><span class="contents-title" data-es="8. Resolver otras ecuaciones">8. Solving Other Equations</span><span class="contents-page-number" data-target="chapter-8"></span></a></li> -->
+        <!-- <li><a href="#chapter-9"><span class="contents-title" data-es="Glosario Matemático">Mathematical Glossary</span><span class="contents-page-number" data-target="chapter-9"></span></a></li> -->
+      </ul>
+
+      <div class="page-number"></div>
+    </section>
+
+    <!-- Dynamic Chapters -->
+    <div id="chapter-container"></div>
+
+
+
+
+  </main>
+
+
+</body>
+</html>
