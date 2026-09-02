@@ -1,7 +1,7 @@
 // ===== Chapter Data =====
 const chapters = [
   { id: "chapter-1", file: "chapter-1.html" },
-  // ===== { id: "chapter-2", file: "chapter-2.html" },
+  { id: "chapter-2", file: "chapter-2.html" },
   // ===== { id: "chapter-3", file: "chapter-3.html" },
   // ===== { id: "chapter-4", file: "chapter-4.html" },
   // ===== { id: "chapter-5", file: "chapter-5.html" },
